@@ -1,9 +1,10 @@
-import sys
-from PySide6.QtWidgets import QApplication, QLabel
+import sys 
+from PySide6.QtWidgets import QApplication
+from views.mainView import MainWindow
 
 app = QApplication(sys.argv)
 
-label = QLabel("Proyecto listo con uv 🚀")
-label.show()
+window = MainWindow()
+window.show()
 
-sys.exit(app.exec())
+app.exec()
